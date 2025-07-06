@@ -24,9 +24,13 @@ compose.desktop {
         mainClass = "MainKt"
 
         nativeDistributions {
-            targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
-            packageName = "task9"
+            targetFormats(TargetFormat.Exe)
+            packageName = "Cubic"
             packageVersion = "1.0.0"
+
+            windows {
+                iconFile.set(project.file("src/main/kotlin/ui/icons/box.ico"))
+            }
         }
     }
 }
