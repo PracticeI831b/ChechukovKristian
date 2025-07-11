@@ -89,9 +89,6 @@ fun MainScreen() {
                             aVal == null || bVal == null || cVal == null || dVal == null -> {
                                 error = "Ошибка: все коэффициенты должны быть числами"
                             }
-                            aVal == 0.0 -> {
-                                error = "Ошибка: коэффициент 'a' не может быть равен 0"
-                            }
                             else -> {
                                 // Вычисление корней
                                 negativeRoots = findNegativeRoots(aVal, bVal, cVal, dVal)
